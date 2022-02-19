@@ -1,11 +1,17 @@
-import ClassCompWithProps from './materi/1_basic_component/ClassCompWithProps';
-import ClassCompWithState from './materi/1_basic_component/ClassCompWithState';
+import ContactForm from './tugas/2_styling_component/ContactForm';
+import Footer from './tugas/2_styling_component/Footer';
+import Jumbotron from './tugas/2_styling_component/Jumbotron';
+import Navbar from './tugas/2_styling_component/Navbar';
+import Skills from './tugas/2_styling_component/Skills';
 
 function App() {
   return (
     <div className="App">
-      <ClassCompWithProps message="Congratulations, you've learned props"/>
-      <ClassCompWithState />
+      <Navbar />
+      <Jumbotron />
+      <Skills />
+      <ContactForm />
+      <Footer />
     </div>
   );
 }
