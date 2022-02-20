@@ -12,7 +12,7 @@ class Navbar extends Component {
     return (
       <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-">
-        <img className='w-6 mr-2' src="https://img.icons8.com/office/16/000000/home--v1.png"/>
+        <img className='w-6 mr-2' src="https://img.icons8.com/office/16/000000/home--v1.png" alt='logo-home' />
           <span className="font-semibold text-xl tracking-tight">HomePage</span>
         </div>
         <div className="block">
