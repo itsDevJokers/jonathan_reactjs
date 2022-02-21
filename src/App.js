@@ -1,9 +1,9 @@
-import WelcomePage from "./tugas/3_form_validation/WelcomePage";
+import News from "./tugas/4_lifecycle_component/News";
 
 function App() {
   return (
     <div className="App">
-      <WelcomePage />
+      <News />
     </div>
   );
 }
