@@ -11,12 +11,10 @@ function News() {
     const [inputVal, setInputVal] = useState('');
     const [isLoading, setIsLoading] = useState(true);
 
-    const API = `281c2b7f724846c48d97e8d9621bf2f5`
-
     useEffect(() => {
       const cancelToken = axios.CancelToken;
       const source = cancelToken.source();
-      axios.get(`https://newsapi.org/v2/top-headlines?country=id&apiKey=${API}`, {cancelToken: source.token})
+      axios.get(`https://newsapi.org/v2/top-headlines?country=id&apiKey=281c2b7f724846c48d97e8d9621bf2f5`, {cancelToken: source.token})
       .then(res => {
         setArticles(res.data.articles)
         setIsLoading(false)
@@ -27,7 +25,7 @@ function News() {
     }, [])
 
     useEffect(() => {
-      inputVal !== '' && axios.get(`https://newsapi.org/v2/everything?q=${inputVal}&sortBy=popularity&language=id&apiKey=${API}`) 
+      inputVal !== '' && axios.get(`https://newsapi.org/v2/everything?q=${inputVal}&sortBy=popularity&language=id&apiKey=281c2b7f724846c48d97e8d9621bf2f5`) 
       .then(res => {
         setArticles(res.data.articles);
         setIsLoading(false)
