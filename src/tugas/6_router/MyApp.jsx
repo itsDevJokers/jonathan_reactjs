@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Sidebar from './Components/Sidebar';
@@ -36,6 +36,7 @@ function MyApp() {
   }
 
   return (
+    <BrowserRouter>
     <div>
         {hideSidebar && <div className='fixed z-10'>
           <Sidebar clickSidebar={handleClickSbar} logout={handleLogout} isLogged={isLoginSuccess}/>
@@ -60,6 +61,7 @@ function MyApp() {
 
         <Footer />
     </div>
+    </BrowserRouter>
   )
 }
 

@@ -1,12 +1,10 @@
-import { BrowserRouter } from "react-router-dom";
-import MyApp from "./tugas/6_router/MyApp";
+import Redux from "./tugas/7_redux/Redux";
+
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <MyApp />
-      </BrowserRouter>
+      <Redux />
     </div>
   );
 }
