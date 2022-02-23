@@ -1,11 +1,12 @@
-// import News from "./tugas/4_lifecycle_component/News";
-
-import News from "./tugas/5_hooks/News";
+import { BrowserRouter } from "react-router-dom";
+import MyApp from "./tugas/6_router/MyApp";
 
 function App() {
   return (
     <div className="App">
-      <News />
+      <BrowserRouter>
+        <MyApp />
+      </BrowserRouter>
     </div>
   );
 }
