@@ -40,12 +40,11 @@ const Login = ({ user }) => {
   }
 
   useEffect(() => {
-    let isMounted = true;
     setTimeout(() => {
       setLoading(false)
     }, 1500);
 
-    return () => { isMounted = false }
+    return () => {}
   }, [])
   
   
